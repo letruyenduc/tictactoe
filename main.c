@@ -131,6 +131,7 @@ int main()
         rounds++;
         if (win_cond_global(grid, players[1]))
         {
+            display_grid(grid);
             printf("\nLe joueur %c a gagne!\n", players[1]);
             break;
         }
@@ -140,6 +141,5 @@ int main()
             break;
         }
     }
-    display_grid(grid);
     return 0;
 }
